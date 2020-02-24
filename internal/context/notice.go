@@ -58,5 +58,5 @@ func (c *Context) renderNoticeBanner() {
 		return
 	}
 
-	c.Data["ServerNotice"] = string(markup.RawMarkdown(buf, ""))
+	c.Data["ServerNotice"] = string(markup.RawMarkdown(buf))
 }

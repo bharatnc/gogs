@@ -350,7 +350,7 @@ func Render(typ Type, input interface{}, urlPrefix string, metas map[string]stri
 	var rawHTML []byte
 	switch typ {
 	case MARKDOWN:
-		rawHTML = RawMarkdown(rawBytes, urlPrefix)
+		rawHTML = RawMarkdown(rawBytes)
 	case ORG_MODE:
 		rawHTML = RawOrgMode(rawBytes, urlPrefix)
 	default:

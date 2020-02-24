@@ -33,5 +33,5 @@ func MarkdownRaw(c *context.APIContext) {
 		c.Error(http.StatusUnprocessableEntity, "", err)
 		return
 	}
-	_, _ = c.Write(markup.SanitizeBytes(markup.RawMarkdown(body, "")))
+	_, _ = c.Write(markup.SanitizeBytes(markup.RawMarkdown(body)))
 }
